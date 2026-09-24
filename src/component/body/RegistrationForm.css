@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+.registration-page {
+  min-height: 100vh;
+  background: #f2f4f7;
+  padding: 30px 20px;
+}
+
+.registration-container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 6px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.registration-container h1 {
+  text-align: center;
+  background: #f5a400;
+  color: #222;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 8px;
+  margin: 0 0 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group > label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+input[type="time"],
+select,
+textarea {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid #d5d9df;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #287be5;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.skills-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.radio-group label,
+.skills-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.color-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-row label {
+  margin: 0;
+}
+
+input[type="color"] {
+  width: 50px;
+  height: 30px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d5d9df;
+  border-radius: 4px;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.register-btn {
+  background: #0866d8;
+}
+
+.register-btn:hover {
+  background: #0755b5;
+}
+
+.reset-btn {
+  background: #34495e;
+}
+
+.reset-btn:hover {
+  background: #263746;
+}
+
+@media (max-width: 600px) {
+
+  .registration-page {
+    padding: 15px;
+  }
+
+  .registration-container {
+    padding: 20px 15px;
+  }
+
+  .radio-group,
+  .skills-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+}
