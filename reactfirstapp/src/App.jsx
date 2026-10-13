@@ -12,13 +12,15 @@ import Online from './components/Online'
 import Error404 from './components/Error404'
 import Product from './components/Product'
 import Spinner from './components/Spinner'
-import Home from './components/Home';
+import Home from './components/Home'
+import Login from './components/Login'
 const App = () => {
   return (
     <div className='container'>
         <Header/>
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/login" element={<Login/>}/>
           <Route path="/courses" element={<Courses/>}>
           <Route index element={<Offline/>}/>
           <Route path="offline" element={<Offline/>}/>
