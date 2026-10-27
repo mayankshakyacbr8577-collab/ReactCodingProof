@@ -1,6 +1,7 @@
 const http = require("http");
 const url = require("url");
-
+app.use(express.JSON());
+app.use(express.static(path.join(__dirname, "public")));
 // In-memory data store
 let products = [
   { id: 1, name: "Product 1", price: 100 },
