@@ -1,7 +1,12 @@
 const http = require("http");
 const url = require("url");
-app.use(express.JSON());
-app.use(express.static(path.join(__dirname, "public")));
+const router = require("./routes/myroutes");
+const express = require("express");
+const path = require("path");
+const app = express();
+app.use(express.json());
+app.use(express.static(path.join(__dirname, "/public")));
+app.use(router);
 // In-memory data store
 let products = [
   { id: 1, name: "Product 1", price: 100 },
